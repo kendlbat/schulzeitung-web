@@ -1,3 +1,7 @@
+---
+import PdfViewer from "@/components/pdfViewer.svelte";
+---
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -19,6 +23,11 @@
                 "Published & Hosted by Tobias Kendlbacher (https://kendlbat.dev/",
             );
         </script>
-        <meta http-equiv="refresh" content="0; url=/23-11-fruehwarnung.pdf" />
-    </head><body> </body>
+        <noscript>
+            <meta http-equiv="refresh" content="0; url=/23-11-fruehwarnung.pdf" />
+        </noscript>
+    </head>
+    <body class="w-full h-full absolute">
+        <PdfViewer src="/23-11-fruehwarnung.pdf" />
+    </body>
 </html>
